@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainer Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <section id="register-section">
+    <h1>Registro de Entrenador</h1>
+    <p class="lead">Completa tu información para comenzar tu aventura Pokémon.</p>
+
+    <form id="trainer-form">
+      <div class="input-row">
+        <div>
+          <label>Nombre de Entrenador</label>
+          <input type="text" id="trainer-name" required>
+          <div class="error"></div>
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" id="trainer-email" required>
+          <div class="error"></div>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div>
+          <label>Fecha de Inicio</label>
+          <input type="date" id="trainer-start" required>
+          <div class="error"></div>
+        </div>
+      </div>
+
+      <button id="finish-btn">Registrar</button>
+    </form>
+  </section>
+
+  <section id="capture-section" style="display:none;">
+    <h1>Capturar Pokémon</h1>
+    <form id="pokemon-form">
+      <input type="text" id="pokemon-input" placeholder="Nombre de Pokémon">
+      <button>Buscar</button>
+    </form>
+
+    <div id="pokemon-result" style="margin-top:12px;"></div>
+
+    <h2>Mi Equipo</h2>
+    <ul id="team-list" class="team"></ul>
+  </section>
+</div>
+
+<script src="log.js"></script>
+</body>
+</html>

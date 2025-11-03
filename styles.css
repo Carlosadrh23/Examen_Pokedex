@@ -1,0 +1,31 @@
+:root{--max-width:900px;--accent:#2b8aef;--danger:#e04848;--success:#2fa84f}
+body{font-family:Inter, system-ui, Arial, sans-serif;line-height:1.4;margin:0;
+    padding:24px;
+    display:flex;justify-content:center;
+    background:linear-gradient(135deg, #4e54c8, #8f94fb)}
+.container{max-width:var(--max-width);width:100%;background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 24px rgba(20,30,60,.08)}
+h1{margin:0 0 8px;font-size:1.4rem}
+p.lead{margin:0 0 16px;color:#556}
+form{display:grid;gap:12px}
+label{font-weight:600;font-size:.9rem}
+input[type=text], input[type=email], input[type=date], button{padding:10px;border-radius:8px;border:1px solid #d6dbe8;font-size:1rem}
+.input-row{display:flex;gap:12px}
+.input-row>div{flex:1}
+.error{color:var(--danger);font-size:.85rem;margin-top:6px}
+.success{color:var(--success);font-size:.85rem;margin-top:6px}
+.valid{border-color:var(--success)!important;box-shadow:0 0 0 3px rgba(47,168,79,.06)}
+.invalid{border-color:var(--danger)!important;box-shadow:0 0 0 3px rgba(224,72,72,.06)}
+.row{display:flex;gap:12px;align-items:center}
+button{cursor:pointer;background:var(--accent);color:white;border:none}
+button.secondary{background:#556;padding:8px 12px}
+section{margin-top:18px}
+.pokemon-preview{display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;background:#f3f7ff}
+img.sprite{width:72px;height:72px}
+ul.team{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+li.card{display:flex;gap:12px;align-items:center;padding:10px;border-radius:10px;border:1px solid #eef2f8}
+.meta{flex:1}
+.meta h4{margin:0 0 6px}
+.controls{display:flex;gap:8px;align-items:center}
+small.note{color:#667}
+.disabled{opacity:.5;pointer-events:none}
+footer{margin-top:16px;color:#889}
