@@ -141,7 +141,7 @@ function renderTeam() {
     li.innerHTML = `
       <img class='sprite' src="${p.sprite}">
       <div class='meta'>
-        <h4>${p.nombre}</h4>
+        <h4>#${p.id} - ${p.nombre || "Desconocido"}</h4>
       </div>
       <div class='controls'>
         <label>
